@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:ProNatur_Biomarkt_GmbH.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="501"
+        MaxWidth="1000" MinWidth="501"
+        x:Class="ProNatur_Biomarkt_GmbH.Views.LoadingScreen"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="ProNatur_Biomarkt_GmbH"
+        Opened="TopLevel_OnOpened"
+        >
+    <Window.Background>
+        <ImageBrush Source="/Assets/GroceryImg.png" Opacity="95"></ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="20"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ProgressBar x:Name="ProgressBar" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="4" VerticalAlignment="Center" HorizontalAlignment="Center" Height="20" Value="50"></ProgressBar>
+        <Label Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom">Loading</Label>
+        <Label x:Name="LoadProc" Grid.Row="3" Grid.Column="3" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom">0%</Label>
+    </Grid>
+</Window>

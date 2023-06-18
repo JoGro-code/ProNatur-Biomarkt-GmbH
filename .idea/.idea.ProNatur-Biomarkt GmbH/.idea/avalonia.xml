@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ProNatur-Biomarkt GmbH/Resources/lodaing.axaml" value="ProNatur-Biomarkt GmbH/ProNatur-Biomarkt GmbH.csproj" />
+        <entry key="ProNatur-Biomarkt GmbH/Views/LoadingScreen.axaml" value="ProNatur-Biomarkt GmbH/ProNatur-Biomarkt GmbH.csproj" />
+        <entry key="ProNatur-Biomarkt GmbH/Views/MainWindow.axaml" value="ProNatur-Biomarkt GmbH/ProNatur-Biomarkt GmbH.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
