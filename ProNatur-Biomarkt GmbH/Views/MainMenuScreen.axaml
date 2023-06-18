@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="150"
+        x:Class="ProNatur_Biomarkt_GmbH.Views.MainMenuScreen"
+        Title="Hauptmenü"
+        Background="Gray">
+        <Grid>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="20"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="20"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Click="Button_OnClick_Product" Grid.Row="2" Grid.Column="1" Height="125" Width="275" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <Image Stretch="Fill" Source="/Assets/BtnImgProducts.png"/>
+                </Button>
+                <Button Click="Button_OnClick_Bill" Grid.Row="2" Grid.Column="3" Height="125" Width="275" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                        <Image Stretch="Fill" Source="/Assets/BtnImgBill.png"/>
+                </Button>
+        </Grid>
+</Window>
+
